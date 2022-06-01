@@ -37,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/logo" />
 
         <TextView
-            android:id="@+id/tv_nama"
+            android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -48,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_kudaur" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/namaEditTextLayout"
+            android:id="@+id/nameEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -56,10 +56,10 @@
             android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nama">
+            app:layout_constraintTop_toBottomOf="@+id/tv_name">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/namaEditText"
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -78,8 +78,8 @@
             android:text="@string/email"
             android:layout_marginTop="20dp"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/namaEditTextLayout"
-            app:layout_constraintTop_toBottomOf="@+id/namaEditTextLayout" />
+            app:layout_constraintStart_toStartOf="@+id/nameEditTextLayout"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailEditTextLayout"
@@ -142,7 +142,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <android.widget.Button
-            android:id="@+id/button_daftar"
+            android:id="@+id/button_register"
             android:layout_width="228dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
@@ -154,28 +154,28 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
 
         <TextView
-            android:id="@+id/tv_register"
+            android:id="@+id/tv_have_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
             android:layout_marginTop="8dp"
             android:text="@string/sudah_punya_akun"
-            app:layout_constraintStart_toStartOf="@+id/button_daftar"
-            app:layout_constraintTop_toBottomOf="@+id/button_daftar" />
+            app:layout_constraintStart_toStartOf="@+id/button_register"
+            app:layout_constraintTop_toBottomOf="@+id/button_register" />
 
         <TextView
-            android:id="@+id/tv_signin"
+            android:id="@+id/tv_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="@string/masuk_"
             android:textStyle="bold"
             android:textColor="@color/light_brown"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_register"
-            app:layout_constraintStart_toEndOf="@+id/tv_register"
-            app:layout_constraintTop_toTopOf="@+id/tv_register" />
+            app:layout_constraintBottom_toBottomOf="@+id/tv_have_account"
+            app:layout_constraintStart_toEndOf="@+id/tv_have_account"
+            app:layout_constraintTop_toTopOf="@+id/tv_have_account" />
         <ProgressBar
-            android:id="@+id/pb_login"
+            android:id="@+id/pb_register"
             style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

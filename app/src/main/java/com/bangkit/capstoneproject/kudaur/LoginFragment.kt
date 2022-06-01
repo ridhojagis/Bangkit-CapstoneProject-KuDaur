@@ -87,7 +87,7 @@ class LoginFragment : Fragment() {
             }
         }
 
-        binding.buttonDaftar.setOnClickListener (
+        binding.buttonRegister.setOnClickListener (
             Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registerFragment)
         )
     }
@@ -102,7 +102,7 @@ class LoginFragment : Fragment() {
         val passwordEditTextLayout =
             ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(480)
         val login = ObjectAnimator.ofFloat(binding.buttonLogin, View.ALPHA, 1f).setDuration(480)
-        val daftar = ObjectAnimator.ofFloat(binding.buttonDaftar, View.ALPHA, 1f).setDuration(480)
+        val daftar = ObjectAnimator.ofFloat(binding.buttonRegister, View.ALPHA, 1f).setDuration(480)
 
         val together = AnimatorSet().apply {
             playTogether(login, daftar)

@@ -21,6 +21,7 @@ class RegisterFragment : Fragment() {
     ): View {
         binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -65,14 +66,14 @@ class RegisterFragment : Fragment() {
         })
 
         // action when login button clicked
-        binding.buttonDaftar.setOnClickListener {
-            val name = binding.namaEditText.text.toString()
+        binding.buttonRegister.setOnClickListener {
+            val name = binding.nameEditText.text.toString()
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
             when {
                 name.isEmpty() -> {
-                    binding.namaEditTextLayout.error = "Masukkan nama"
+                    binding.nameEditTextLayout.error = "Masukkan nama"
                 }
                 email.isEmpty() -> {
                     binding.emailEditTextLayout.error = "Masukkan email"
@@ -87,7 +88,7 @@ class RegisterFragment : Fragment() {
                     ?.navigate(R.id.action_registerFragment_to_loginFragment)
             }
         }
-        binding.tvSignin.setOnClickListener(
+        binding.tvLogin.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_registerFragment_to_loginFragment)
         )
     }

@@ -18,7 +18,7 @@
         android:contentDescription="@string/brand_logo" />
 
     <android.widget.Button
-        android:id="@+id/button_daftar"
+        android:id="@+id/button_register"
         android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -38,9 +38,9 @@
         android:text="@string/masuk"
         android:textColor="@color/white"
         android:background="@drawable/masuk_button"
-        app:layout_constraintBottom_toTopOf="@+id/button_daftar"
-        app:layout_constraintEnd_toEndOf="@+id/button_daftar"
-        app:layout_constraintStart_toStartOf="@+id/button_daftar"
+        app:layout_constraintBottom_toTopOf="@+id/button_register"
+        app:layout_constraintEnd_toEndOf="@+id/button_register"
+        app:layout_constraintStart_toStartOf="@+id/button_register"
         android:alpha="0"/>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -133,7 +133,7 @@
         android:alpha="0"/>
 
     <ProgressBar
-        android:id="@+id/pb_login"
+        android:id="@+id/pb_register"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
