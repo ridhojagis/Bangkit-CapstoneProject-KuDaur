@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">KuDaur</string>
+    <string name="daftar">DAFTAR</string>
+    <string name="masuk">MASUK</string>
+    <string name="kudaur">KuDaur</string>
+    <string name="email">Email</string>
+    <string name="password">Kata sandi</string>
+    <string name="ketikkan_email">ketikkan email</string>
+    <string name="ketikkan_password">ketikkan password</string>
+    <string name="invalid_email">Invalid email.</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="ketikkan_nama">ketikkan nama lengkap</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="masuk_">Masuk</string>
+    <string name="invalid_password">Password minimal harus 8 karakter</string>
+    <string name="brand_logo">brand logo</string>
 </resources>
