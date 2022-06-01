@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_trash_navigation"
+    app:startDestination="@id/addTrashFragment">
+
+    <fragment
+        android:id="@+id/addTrashFragment"
+        android:name="com.bangkit.capstoneproject.kudaur.AddTrashFragment"
+        android:label="fragment_add_trash"
+        tools:layout="@layout/fragment_add_trash" />
+
+</navigation>

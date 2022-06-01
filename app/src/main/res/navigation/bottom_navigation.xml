@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.bangkit.capstoneproject.kudaur.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/navigation_camera"
+        android:name="com.bangkit.capstoneproject.kudaur.AddTrashActivity"
+        android:label="activity_add_trash"
+        tools:layout="@layout/activity_add_trash" />
+    <fragment
+        android:id="@+id/navigation_trash_basket"
+        android:name="com.bangkit.capstoneproject.kudaur.TrashBasketFragment"
+        android:label="fragment_trash_basket"
+        tools:layout="@layout/fragment_add_trash" />
+</navigation>

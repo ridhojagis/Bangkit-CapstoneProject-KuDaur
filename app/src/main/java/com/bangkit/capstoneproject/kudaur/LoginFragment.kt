@@ -83,7 +83,7 @@ class LoginFragment : Fragment() {
                 password.length < 8 -> {
                     binding.passwordEditTextLayout.error = getString(R.string.invalid_password)
                 }
-                else -> view?.findNavController()?.navigate(R.id.action_loginFragment_to_registerFragment)
+                else -> view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeActivity)
             }
         }
 

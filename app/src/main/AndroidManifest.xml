@@ -14,6 +14,12 @@
         android:theme="@style/Theme.KuDaur"
         tools:targetApi="31">
         <activity
+            android:name=".TrashBasketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTrashActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
