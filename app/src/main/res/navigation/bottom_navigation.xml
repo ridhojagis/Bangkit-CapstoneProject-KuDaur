@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.bangkit.capstoneproject.kudaur.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/kudaur"
         tools:layout="@layout/fragment_home" />
     <activity
         android:id="@+id/navigation_camera"
         android:name="com.bangkit.capstoneproject.kudaur.AddTrashActivity"
-        android:label="activity_add_trash"
+        android:label="@string/kelola_sampah"
         tools:layout="@layout/activity_add_trash" />
     <fragment
         android:id="@+id/navigation_trash_basket"
         android:name="com.bangkit.capstoneproject.kudaur.TrashBasketFragment"
-        android:label="fragment_trash_basket"
+        android:label="@string/kantong_sampah"
         tools:layout="@layout/fragment_add_trash" />
 </navigation>
