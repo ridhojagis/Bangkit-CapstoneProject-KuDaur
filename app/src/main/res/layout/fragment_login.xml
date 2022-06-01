@@ -27,7 +27,8 @@
         android:textColor="@color/light_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:alpha="0"/>
 
     <android.widget.Button
         android:id="@+id/button_masuk"
@@ -39,7 +40,8 @@
         android:background="@drawable/masuk_button"
         app:layout_constraintBottom_toTopOf="@+id/button_daftar"
         app:layout_constraintEnd_toEndOf="@+id/button_daftar"
-        app:layout_constraintStart_toStartOf="@+id/button_daftar"/>
+        app:layout_constraintStart_toStartOf="@+id/button_daftar"
+        android:alpha="0"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailEditTextLayout"
@@ -50,7 +52,8 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_email">
+        app:layout_constraintTop_toBottomOf="@+id/tv_email"
+        android:alpha="0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEditText"
@@ -75,7 +78,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_password"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        android:alpha="0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"
@@ -92,7 +96,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_kudaur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -114,7 +118,8 @@
         android:text="@string/email"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_kudaur"
+        android:alpha="0"/>
 
     <TextView
         android:id="@+id/tv_password"
@@ -124,6 +129,7 @@
         android:textSize="20sp"
         android:text="@string/password"
         app:layout_constraintStart_toStartOf="@+id/emailEditTextLayout"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"/>
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
+        android:alpha="0"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
