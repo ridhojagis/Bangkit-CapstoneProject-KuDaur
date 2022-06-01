@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.bangkit.capstoneproject.kudaur.databinding.FragmentRegisterBinding
 
 class RegisterFragment : Fragment() {
@@ -65,10 +66,14 @@ class RegisterFragment : Fragment() {
 
         // action when login button clicked
         binding.buttonDaftar.setOnClickListener {
+            val name = binding.namaEditText.text.toString()
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
             when {
+                name.isEmpty() -> {
+                    binding.namaEditTextLayout.error = "Masukkan nama"
+                }
                 email.isEmpty() -> {
                     binding.emailEditTextLayout.error = "Masukkan email"
                 }
@@ -78,11 +83,12 @@ class RegisterFragment : Fragment() {
                 password.length < 8 -> {
                     binding.passwordEditTextLayout.error = getString(R.string.invalid_password)
                 }
-                else -> Navigation.createNavigateOnClickListener(R.id.action_registerFragment_to_loginFragment)
+                else -> view?.findNavController()
+                    ?.navigate(R.id.action_registerFragment_to_loginFragment)
             }
         }
-        binding.tvSignin.setOnClickListener{
+        binding.tvSignin.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_registerFragment_to_loginFragment)
-        }
+        )
     }
 }
