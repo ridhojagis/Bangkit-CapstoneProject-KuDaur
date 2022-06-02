@@ -21,4 +21,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="kelola_sampah">Kelola Sampah</string>
     <string name="kantong_sampah">Kantong Sampah</string>
+    <string name="empty_email">Masukkan email</string>
+    <string name="empty_password">Masukkan password</string>
 </resources>

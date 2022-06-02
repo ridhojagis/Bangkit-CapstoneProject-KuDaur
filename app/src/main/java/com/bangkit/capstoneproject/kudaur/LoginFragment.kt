@@ -75,15 +75,18 @@ class LoginFragment : Fragment() {
 
             when {
                 email.isEmpty() -> {
-                    binding.emailEditTextLayout.error = "Masukkan email"
+                    binding.emailEditTextLayout.error = getString(R.string.empty_email)
                 }
                 password.isEmpty() -> {
-                    binding.passwordEditTextLayout.error = "Masukkan password"
+                    binding.passwordEditTextLayout.error = getString(R.string.empty_password)
                 }
                 password.length < 8 -> {
                     binding.passwordEditTextLayout.error = getString(R.string.invalid_password)
                 }
-                else -> view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeActivity)
+                else -> {
+                    view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeActivity)
+                    activity?.finish()
+                }
             }
         }
 
