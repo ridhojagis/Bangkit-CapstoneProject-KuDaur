@@ -23,4 +23,6 @@
     <string name="empty_email">Masukkan email</string>
     <string name="empty_password">Masukkan password</string>
     <string name="profile">Profil</string>
+    <string name="kelola_sampahmu">Kelola Sampahmu!</string>
+    <string name="foto_sampah">Foto sampah</string>
 </resources>
