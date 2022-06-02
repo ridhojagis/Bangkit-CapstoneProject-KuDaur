@@ -18,6 +18,6 @@
     <fragment
         android:id="@+id/navigation_trash_basket"
         android:name="com.bangkit.capstoneproject.kudaur.TrashBasketFragment"
-        android:label="@string/kantong_sampah"
+        android:label="@string/kudaur"
         tools:layout="@layout/fragment_add_trash" />
 </navigation>
