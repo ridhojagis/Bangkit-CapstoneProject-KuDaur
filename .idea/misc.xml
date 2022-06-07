@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/MobileDevelopment/app/src/main/res/layout/fragment_home.xml" value="0.175" />
+        <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/MobileDevelopment/app/src/main/res/layout/activity_add_trash.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/MobileDevelopment/app/src/main/res/layout/activity_profile.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/MobileDevelopment/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/MobileDevelopment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
         <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3185" />
         <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/app/src/main/res/drawable/custom_email_icon.xml" value="0.3185" />
         <entry key="..\:/Users/RidhoJagis/Documents/Bangkit/KuDaur/app/src/main/res/drawable/custom_name_icon.xml" value="0.3185" />
