@@ -25,4 +25,5 @@
     <string name="profile">Profil</string>
     <string name="kelola_sampahmu">Kelola Sampahmu!</string>
     <string name="foto_sampah">Foto sampah</string>
+    <string name="daftar_sampah">Daftar Sampah</string>
 </resources>
