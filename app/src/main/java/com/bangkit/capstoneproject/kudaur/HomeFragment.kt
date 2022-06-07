@@ -26,12 +26,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonTrashPhoto.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_homeFragment_to_addTrashActivity)
+            view.findNavController().navigate(R.id.action_navigation_home_to_navigation_camera)
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null
     }
 }

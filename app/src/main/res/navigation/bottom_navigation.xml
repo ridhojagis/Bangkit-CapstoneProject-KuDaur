@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.bangkit.capstoneproject.kudaur.HomeFragment"
         android:label="@string/kudaur"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_camera"
+            app:destination="@id/navigation_camera" />
+    </fragment>
     <activity
         android:id="@+id/navigation_camera"
         android:name="com.bangkit.capstoneproject.kudaur.AddTrashActivity"
