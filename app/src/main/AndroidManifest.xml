@@ -14,16 +14,16 @@
         android:theme="@style/Theme.KuDaur"
         tools:targetApi="31">
         <activity
-            android:name=".ProfileActivity"
+            android:name=".ui.profile.ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".TrashBasketActivity"
             android:exported="false" />
         <activity
-            android:name=".AddTrashActivity"
+            android:name=".ui.addTrash.AddTrashActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.home.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

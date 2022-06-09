@@ -1,15 +1,16 @@
-package com.bangkit.capstoneproject.kudaur
+package com.bangkit.capstoneproject.kudaur.ui.profile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import com.bangkit.capstoneproject.kudaur.R
 
-class AddTrashActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_trash)
+        setContentView(R.layout.activity_profile)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = getString(R.string.kelola_sampah)
+        supportActionBar?.title = getString(R.string.profile)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

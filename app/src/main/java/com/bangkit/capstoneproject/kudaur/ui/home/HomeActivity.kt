@@ -1,4 +1,4 @@
-package com.bangkit.capstoneproject.kudaur
+package com.bangkit.capstoneproject.kudaur.ui.home
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.bangkit.capstoneproject.kudaur.ui.profile.ProfileActivity
+import com.bangkit.capstoneproject.kudaur.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {

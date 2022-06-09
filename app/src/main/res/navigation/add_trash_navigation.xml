@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/addTrashFragment"
-        android:name="com.bangkit.capstoneproject.kudaur.AddTrashFragment"
+        android:name="com.bangkit.capstoneproject.kudaur.ui.addTrash.AddTrashFragment"
         android:label="fragment_add_trash"
         tools:layout="@layout/fragment_add_trash" />
 

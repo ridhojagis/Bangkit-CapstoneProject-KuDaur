@@ -1,4 +1,4 @@
-package com.bangkit.capstoneproject.kudaur
+package com.bangkit.capstoneproject.kudaur.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import com.bangkit.capstoneproject.kudaur.R
 import com.bangkit.capstoneproject.kudaur.databinding.FragmentHomeBinding
 
 

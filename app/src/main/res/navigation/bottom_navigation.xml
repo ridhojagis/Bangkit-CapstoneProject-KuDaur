@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.bangkit.capstoneproject.kudaur.HomeFragment"
+        android:name="com.bangkit.capstoneproject.kudaur.ui.home.HomeFragment"
         android:label="@string/kudaur"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <activity
         android:id="@+id/navigation_camera"
-        android:name="com.bangkit.capstoneproject.kudaur.AddTrashActivity"
+        android:name="com.bangkit.capstoneproject.kudaur.ui.addTrash.AddTrashActivity"
         android:label="@string/kelola_sampah"
         tools:layout="@layout/activity_add_trash" />
     <fragment

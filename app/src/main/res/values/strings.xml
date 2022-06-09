@@ -12,7 +12,7 @@
     <string name="ketikkan_nama">ketikkan nama lengkap</string>
     <string name="sudah_punya_akun">Sudah punya akun?</string>
     <string name="masuk_">Masuk</string>
-    <string name="invalid_password">Password minimal harus 8 karakter</string>
+    <string name="invalid_password">Password minimal harus 6 karakter</string>
     <string name="brand_logo">brand logo</string>
     <string name="title_home">Beranda</string>
     <string name="trash_photo_shoot">Foto Sampah</string>

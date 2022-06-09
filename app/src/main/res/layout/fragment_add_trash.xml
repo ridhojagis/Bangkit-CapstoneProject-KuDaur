@@ -4,8 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddTrashFragment">
+    tools:context=".ui.addTrash.AddTrashFragment">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_half_vert_detail"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <ImageView
         android:id="@+id/img_trash"
@@ -21,29 +27,30 @@
         android:id="@+id/button_camera"
         android:layout_width="131dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/foto_sampah_button"
         android:text="Kamera"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_half_vert_detail"
         app:layout_constraintTop_toBottomOf="@+id/img_trash" />
 
     <android.widget.Button
         android:id="@+id/button_gallery"
         android:layout_width="131dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/foto_sampah_button"
         android:text="Galeri"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/button_camera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_camera" />
+        app:layout_constraintStart_toStartOf="@+id/gl_half_vert_detail"
+        app:layout_constraintTop_toTopOf="@+id/button_camera"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_trash_type"

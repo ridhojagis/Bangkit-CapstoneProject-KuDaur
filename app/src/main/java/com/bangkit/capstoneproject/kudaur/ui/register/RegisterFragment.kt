@@ -1,8 +1,5 @@
-package com.bangkit.capstoneproject.kudaur
+package com.bangkit.capstoneproject.kudaur.ui.register
 
-import android.animation.AnimatorSet
-import android.animation.ObjectAnimator
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -12,25 +9,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import com.bangkit.capstoneproject.kudaur.databinding.FragmentLoginBinding
+import com.bangkit.capstoneproject.kudaur.R
+import com.bangkit.capstoneproject.kudaur.databinding.FragmentRegisterBinding
 
-class LoginFragment : Fragment() {
+class RegisterFragment : Fragment() {
 
-    private lateinit var binding: FragmentLoginBinding
+    private lateinit var binding: FragmentRegisterBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentLoginBinding.inflate(inflater, container, false)
+        binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         setupAction()
-        playAnimation()
     }
 
     private fun isValidEmail(email: CharSequence): Boolean {
@@ -69,58 +67,30 @@ class LoginFragment : Fragment() {
         })
 
         // action when login button clicked
-        binding.buttonLogin.setOnClickListener {
+        binding.buttonRegister.setOnClickListener {
+            val name = binding.nameEditText.text.toString()
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
             when {
+                name.isEmpty() -> {
+                    binding.nameEditTextLayout.error = "Masukkan nama"
+                }
                 email.isEmpty() -> {
-                    binding.emailEditTextLayout.error = getString(R.string.empty_email)
+                    binding.emailEditTextLayout.error = "Masukkan email"
                 }
                 password.isEmpty() -> {
-                    binding.passwordEditTextLayout.error = getString(R.string.empty_password)
+                    binding.passwordEditTextLayout.error = "Masukkan password"
                 }
                 password.length < 8 -> {
                     binding.passwordEditTextLayout.error = getString(R.string.invalid_password)
                 }
-                else -> {
-                    view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeActivity)
-                    activity?.finish()
-                }
+                else -> view?.findNavController()
+                    ?.navigate(R.id.action_registerFragment_to_loginFragment)
             }
         }
-
-        binding.buttonRegister.setOnClickListener (
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_registerFragment)
+        binding.tvLogin.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_registerFragment_to_loginFragment)
         )
-    }
-
-    private fun playAnimation() {
-
-        val emailTextView = ObjectAnimator.ofFloat(binding.tvEmail, View.ALPHA, 1f).setDuration(480)
-        val emailEditTextLayout =
-            ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(480)
-        val passwordTextView =
-            ObjectAnimator.ofFloat(binding.tvPassword, View.ALPHA, 1f).setDuration(480)
-        val passwordEditTextLayout =
-            ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(480)
-        val login = ObjectAnimator.ofFloat(binding.buttonLogin, View.ALPHA, 1f).setDuration(480)
-        val daftar = ObjectAnimator.ofFloat(binding.buttonRegister, View.ALPHA, 1f).setDuration(480)
-
-        val together = AnimatorSet().apply {
-            playTogether(login, daftar)
-        }
-
-        AnimatorSet().apply {
-            playSequentially(
-                emailTextView,
-                emailEditTextLayout,
-                passwordTextView,
-                passwordEditTextLayout,
-                together
-            )
-            startDelay = 480
-            start()
-        }
     }
 }
