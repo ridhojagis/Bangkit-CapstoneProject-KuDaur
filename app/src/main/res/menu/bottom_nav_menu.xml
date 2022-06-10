@@ -11,5 +11,5 @@
     <item
         android:id="@+id/navigation_trash_basket"
         android:icon="@drawable/ic_trash_basket_24"
-        android:title="@string/trash_basket" />
+        android:title="@string/trash_bag" />
 </menu>

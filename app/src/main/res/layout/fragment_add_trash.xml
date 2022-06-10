@@ -17,11 +17,17 @@
         android:id="@+id/img_trash"
         android:layout_width="212dp"
         android:layout_height="212dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_image_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        android:contentDescription="@string/trash_image" />
 
     <android.widget.Button
         android:id="@+id/button_camera"
@@ -30,7 +36,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/foto_sampah_button"
-        android:text="Kamera"
+        android:text="@string/camera"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -43,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:background="@drawable/foto_sampah_button"
-        android:text="Galeri"
+        android:text="@string/gallery"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -57,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Jenis sampah:"
+        android:text="@string/type_of_trash"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/button_gallery"
@@ -69,14 +75,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Logam"
+        android:text="@string/type_result"
         android:textStyle="bold"
         android:textSize="24sp"
         android:textColor="@color/light_green"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/tv_trash_type"
         app:layout_constraintStart_toStartOf="@+id/tv_trash_type"
         app:layout_constraintTop_toBottomOf="@+id/tv_trash_type" />
+
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <android.widget.Button
         android:id="@+id/button_trash_basket"
@@ -84,11 +108,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:background="@drawable/foto_sampah_button"
-        android:text="Masukkan kantong sampah"
+        android:text="@string/add_to_trash_bag"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
