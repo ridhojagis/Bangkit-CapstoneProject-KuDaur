@@ -22,11 +22,15 @@ import androidx.lifecycle.ViewModelProvider
 import com.bangkit.capstoneproject.kudaur.R
 import com.bangkit.capstoneproject.kudaur.data.preferences.SessionPreference
 import com.bangkit.capstoneproject.kudaur.databinding.FragmentAddTrashBinding
+import com.bangkit.capstoneproject.kudaur.ml.Model1
 import com.bangkit.capstoneproject.kudaur.utils.createCustomTempFile
 import com.bangkit.capstoneproject.kudaur.utils.rotateBitmap
 import com.bangkit.capstoneproject.kudaur.utils.uriToFile
+import org.tensorflow.lite.DataType
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
 import java.io.FileOutputStream
+import java.nio.ByteBuffer
 
 class AddTrashFragment : Fragment() {
 
@@ -84,6 +88,7 @@ class AddTrashFragment : Fragment() {
                 getFile = it
                 val imageBmp = BitmapFactory.decodeFile(it.path)
                 binding.imgTrash.setImageBitmap(imageBmp)
+//                outputGenerator(imageBmp)
             }
         }
 
@@ -100,6 +105,26 @@ class AddTrashFragment : Fragment() {
         binding.buttonGallery.setOnClickListener { startGallery() }
 //        binding.buttonAddTrash.setOnClickListener { uploadImage() }
     }
+
+//    private fun outputGenerator(bitmap: Bitmap?) {
+//
+//        val model = Model1.newInstance(this)
+//
+//        // Creates inputs for reference.
+//        val newBitmap = bitmap?.copy(Bitmap.Config.ARGB_8888, true)
+//        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 300, 300, 3), DataType.FLOAT32)
+//        inputFeature0.loadBuffer(newBitmap)
+//
+//        // Runs model inference and gets result.
+//        val outputs = model.process(model)
+//            .outputFeature0AsTensorBuffer.apply {
+//
+//            }
+//        val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+//
+//        // Releases model resources if no longer used.
+//        model.close()
+//    }
 
     private fun startGallery() {
         val intent = Intent()
